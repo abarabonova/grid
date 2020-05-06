@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>CSS Grid</title>
+  <link rel="stylesheet" href="styles/master.css">
+</head>
+<body>
+
+  <section id="section_one">
+    <h1>LAYOT<br>TECHNOLOGIES<br>CSS</h1>
+    <h2>with CSS Grid</h2>
+  </section>
+
+  <section id="section_two">
+
+    <a class="hidden2" href="#hidden1" onclick="view('hidden1'); return false">styles</a>
+    <div id="hidden1" class="hidden2_div" style="display: none; padding-top: 20px;">
+      <h3 class="hidden2_div_h3">Внутренние стили встраиваются в раздел <//head><//head> HTML-документа и определяются внутри тега<//style><//style>. Внутренние стили имеют приоритет над внешними, но уступают встроенным стилям (заданным через атрибут style).</h3>
+      <p>А тут основной текст</p>
+    </div>
+
+    <a class="hidden3" href="#hidden2" onclick="view('hidden2'); return false">import</a>
+    <div id="hidden2" class="hidden3_div" style="display: none; padding-top: 20px;">
+      <h3 class="hidden3_div_h3">Правило @import позволяет загружать внешние таблицы стилей. Чтобы директива @import работала, она должна располагаться в таблице стилей (внешней или внутренней) перед всеми остальными правилами:</h3>
+      <p>А тут основной текст</p>
+    </div>
+
+    <a class="hidden4" href="#hidden4" onclick="view('hidden4'); return false">class</a>
+    <div id="hidden4" class="hidden4_div" style="display: none; padding-top: 20px;">
+      <h3 class="hidden4_div_h3">Селекторы класса позволяют задавать стили для одного и более элементов с одинаковым именем класса, размещенных в разных местах страницы или на разных страницах сайта.</h3>
+      <p>А тут основной текст</p>
+    </div>
+
+
+  </section>
+
+
+
+<script src="js/anime.js" charset="utf-8"></script>
+</body>
+</html>

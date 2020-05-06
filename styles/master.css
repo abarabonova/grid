@@ -1,0 +1,95 @@
+@import "reset.css";
+
+@font-face {
+  font-family: "Panama";
+  font-weight: regular;
+  src: url(Panama-Demo-Regular.otf) format('truetype');
+}
+
+body {
+    font-family: "Panama";
+}
+
+/* секция 1 */
+
+#section_one {
+  position: absolute;
+  width: 50vw;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 5vw;
+  padding: 10px 20px;
+}
+
+h2 {
+  font-size: 2vw;
+  padding: 0px 20px;
+}
+
+
+
+/* секция 2 */
+
+#section_two {
+  position: absolute;
+  right: 0;
+  width: 50vw;
+  height: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: chartreuse;
+}
+
+.hidden2,
+.hidden2_div,
+.hidden2_div_h3 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+
+.hidden3,
+.hidden3_div,
+.hidden3_div_h3 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+
+  height: 100%;
+}
+
+.hidden4,
+.hidden4_div,
+.hidden4_div_h3 {
+  grid-column: 1/3;
+  grid-row: 2/4;
+
+  height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
