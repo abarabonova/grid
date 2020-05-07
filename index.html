@@ -9,7 +9,12 @@
 
   <section id="section_one">
     <h1>LAYOT<br>TECHNOLOGIES<br>CSS</h1>
-    <h2>with CSS Grid</h2>
+    <h6>with CSS Grid</h6>
+    <div>
+      <a href="https://html5book.ru/css-css3/">html5book</a>
+      <a href="https://css-tricks.com/">css-tricks</a>
+      <a href="https://html5css.ru/cssref/default.php">html5css</a>
+    </div>
   </section>
 
   <section id="section_two">
@@ -17,19 +22,126 @@
     <a class="hidden2" href="#hidden1" onclick="view('hidden1'); return false">styles</a>
     <div id="hidden1" class="hidden2_div" style="display: none; padding-top: 20px;">
       <h3 class="hidden2_div_h3">Внутренние стили встраиваются в раздел <//head><//head> HTML-документа и определяются внутри тега<//style><//style>. Внутренние стили имеют приоритет над внешними, но уступают встроенным стилям (заданным через атрибут style).</h3>
-      <p>А тут основной текст</p>
     </div>
 
     <a class="hidden3" href="#hidden2" onclick="view('hidden2'); return false">import</a>
     <div id="hidden2" class="hidden3_div" style="display: none; padding-top: 20px;">
       <h3 class="hidden3_div_h3">Правило @import позволяет загружать внешние таблицы стилей. Чтобы директива @import работала, она должна располагаться в таблице стилей (внешней или внутренней) перед всеми остальными правилами:</h3>
-      <p>А тут основной текст</p>
     </div>
 
     <a class="hidden4" href="#hidden4" onclick="view('hidden4'); return false">class</a>
     <div id="hidden4" class="hidden4_div" style="display: none; padding-top: 20px;">
-      <h3 class="hidden4_div_h3">Селекторы класса позволяют задавать стили для одного и более элементов с одинаковым именем класса, размещенных в разных местах страницы или на разных страницах сайта.</h3>
-      <p>А тут основной текст</p>
+      <h3 class="hidden4_div_h3">Селекторы класса позволяют задавать стили для одного и более элементов с одинаковым именем класса, размещенных в разных местах страницы.</h3>
+    </div>
+
+    <a class="hidden5" href="#hidden5" onclick="view('hidden5'); return false">id</a>
+    <div id="hidden5" class="hidden5_div" style="display: none; padding-top: 20px;">
+      <h3 class="hidden5_div_h3">Селектор идентификатора позволяет форматировать один конкретный элемент. Значение id должно быть уникальным, на одной странице может встречаться только один раз и должно содержать хотя бы один символ. </h3>
+    </div>
+
+    <a class="hidden6" href="#hidden6" onclick="view('hidden6'); return false">потомки</a>
+    <div id="hidden6" class="hidden6_div" style="display: none; padding-top: 20px;">
+      <h3 class="hidden6_div_h3">Селекторы потомков применяют стили к элементам, расположенным внутри элемента-контейнера. Например, ul li {text-transform: uppercase;} — выберет все элементы li, являющиеся потомками всех элементов ul.</h3>
+    </div>
+
+    <a class="hidden7" href="#hidden7" onclick="view('hidden7'); return false">дочерний селектор</a>
+    <div id="hidden7" class="hidden7_div" style="display: none; padding-top: 20px;">
+      <h3 class="hidden7_div_h3">Дочерний элемент является прямым потомком содержащего его элемента. Например, p > strong — выберет все элементы strong, являющиеся дочерними по отношению к элементу p.</h3>
+    </div>
+
+    <a class="hidden8" href="#hidden8" onclick="view('hidden8'); return false">cестринский селектор</a>
+    <div id="hidden8" class="hidden8_div" style="display: none; padding-top: 20px;">
+      <h3 class="hidden8_div_h3">Сестринские отношения возникают между элементами, имеющими общего родителя.h1 + p — выберет все первые абзацы, идущие непосредственно за любым тегом <//h1>, не затрагивая остальные абзацы;</h3>
+    </div>
+
+    <a class="hidden9" href="#hidden9" onclick="view('hidden9'); return false">cелектор атрибута</a>
+    <div id="hidden9" class="hidden9_div" style="display: none; padding-top: 20px;">
+      <h3 class="hidden9_div_h3">Селекторы атрибутов выбирают элементы на основе имени атрибута или значения атрибута. [атрибут] — все элементы, содержащие указанный атрибут, [alt] — все элементы, для которых задан атрибут alt;</h3>
+    </div>
+
+    <a class="hidden10" href="#hidden10" onclick="view('hidden10'); return false">cелектор псевдокласса</a>
+    <div id="hidden10" class="hidden10_div" style="display: none; padding-top: 20px;">
+      <h3 class="hidden10_div_h3">Псевдоклассы — это классы, фактически не прикрепленные к HTML-тегам. Они позволяют применить CSS-правила к элементам при совершении события или подчиняющимся определенному правилу.</h3>
+    </div>
+
+    <a class="hidden11" href="#hidden11" onclick="view('hidden11'); return false">cелектор структурных псевдоклассов</a>
+    <div id="hidden11" class="hidden11_div" style="display: none; padding-top: 20px;">
+      <h3 class="hidden11_div_h3">Структурные псевдоклассы отбирают дочерние элементы в соответствии с параметром, указанным в круглых скобках.</h3>
+    </div>
+
+    <a class="hidden12" href="#hidden12" onclick="view('hidden12'); return false">cелектор псевдоэлемента</a>
+    <div id="hidden12" class="hidden12_div" style="display: none; padding-top: 20px;">
+      <h3 class="hidden12_div_h3">Для более точного отбора элементов для форматирования можно использовать комбинации селекторов.</h3>
+    </div>
+
+    <a class="hidden13" href="#hidden13" onclick="view('hidden13'); return false">комбинация селекторов</a>
+    <div id="hidden13" class="hidden13_div" style="display: none; padding-top: 20px;">
+      <h3 class="hidden13_div_h3">Псевдоэлементы используются для добавления содержимого, которое генерируется с помощью свойства content.</h3>
+    </div>
+
+    <a class="hidden14" href="#hidden14" onclick="view('hidden14'); return false">группировка селекторов</a>
+    <div id="hidden14" class="hidden14_div" style="display: none; padding-top: 20px;">
+      <h3 class="hidden14_div_h3">Один и тот же стиль можно одновременно применить к нескольким элементам. Для этого необходимо в левой части объявления перечислить через запятую нужные селекторы.</h3>
+    </div>
+
+    <a class="hidden15" href="#hidden15" onclick="view('hidden15'); return false">наследование</a>
+    <div id="hidden15" class="hidden15_div" style="display: none; padding-top: 20px;">
+      <h3 class="hidden15_div_h3">Наследование заключается в том, что элементы наследуют свойства от своего родителя (элемента, их содержащего).</h3>
+    </div>
+
+    <a class="hidden15-1" href="#hidden15-1" onclick="view('hidden15-1'); return false">inherit</a>
+    <div id="hidden15-1" class="hidden15-1_div" style="display: none; padding-top: 20px;">
+      <h3 class="hidden15-1_div_h3">CSS значение inherit указывает, что значение наследуется от родительского элемента.</h3>
+    </div>
+
+    <a class="hidden16" href="#hidden16" onclick="view('hidden16'); return false">каскад</a>
+    <div id="hidden16" class="hidden16_div" style="display: none; padding-top: 20px;">
+      <h3 class="hidden16_div_h3">Каскадирование — это механизм, который управляет конечным результатом в ситуации, когда к одному элементу применяются разные CSS-правила. Существует три критерия, которые определяют порядок применения свойств — правило !important, специфичность и порядок, в котором подключены таблицы стилей.</h3>
+    </div>
+
+    <a class="hidden17" href="#hidden17" onclick="view('hidden17'); return false">блочные элементы</a>
+    <div id="hidden17" class="hidden17_div" style="display: none; padding-top: 20px;">
+      <h3 class="hidden17_div_h3">Блочные элементы — элементы высшего уровня, которые форматируются визуально как блоки, располагаясь на странице в окне браузера вертикально. Значения свойства display, такие как block, list-item и table делают элементы блочными.</h3>
+    </div>
+
+    <a class="hidden18" href="#hidden18" onclick="view('hidden18'); return false">строчные элементы</a>
+    <div id="hidden18" class="hidden18_div" style="display: none; padding-top: 20px;">
+      <h3 class="hidden18_div_h3">Встроенные (строчные) элементы генерируют внутристрочные контейнеры. Они не формируют новые блоки контента. Значения свойства display, такие как inline и inline-table делают элементы строчными.</h3>
+    </div>
+
+    <a class="hidden19" href="#hidden19" onclick="view('hidden19'); return false">строчно-блочные</a>
+    <div id="hidden19" class="hidden19_div" style="display: none; padding-top: 20px;">
+      <h3 class="hidden19_div_h3">Существует еще одна группа элементов, которые браузер обрабатывает как строчно-блочные {display: inline-block;}. Такие элементы являются встроенным, но для них можно задавать поля, отступы, ширину и высоту.</h3>
+    </div>
+
+    <a class="hidden20" href="#hidden20" onclick="view('hidden20'); return false">width</a>
+    <div id="hidden20" class="hidden20_div" style="display: none; padding-top: 20px;">
+      <h3 class="hidden20_div_h3">Свойство width определяет ширину содержимого блока.</h3>
+    </div>
+
+    <a class="hidden21" href="#hidden21" onclick="view('hidden21'); return false">height</a>
+    <div id="hidden21" class="hidden21_div" style="display: none; padding-top: 20px;">
+      <h3 class="hidden21_div_h3">Свойство height определяет высоту содержимого блока. Это свойство не применяется к незамещаемым строчным элементам. Значения длины не могут быть отрицательными.</h3>
+    </div>
+
+    <a class="hidden22" href="#hidden22" onclick="view('hidden22'); return false">min-width, max-width</a>
+    <div id="hidden22" class="hidden22_div" style="display: none; padding-top: 20px;">
+      <h3 class="hidden22_div_h3">Свойства min-width и max-width позволяют ограничивать ширину содержимого до определенного диапазона. Значения не могут быть отрицательными. Для min-width значение по умолчанию 0, для max-width — none.</h3>
+    </div>
+
+    <a class="hidden23" href="#hidden23" onclick="view('hidden23'); return false">min-height, max-height</a>
+    <div id="hidden23" class="hidden23_div" style="display: none; padding-top: 20px;">
+      <h3 class="hidden23_div_h3">Иногда полезно ограничить высоту элементов определенным диапазоном. Свойства min-height и max-height предлагают эту функциональность.</h3>
+    </div>
+
+    <a class="hidden24" href="#hidden24" onclick="view('hidden24'); return false">box-sizing</a>
+    <div id="hidden24" class="hidden24_div" style="display: none; padding-top: 20px;">
+      <h3 class="hidden24_div_h3">Свойство box-sizing переключает блочную модель с фиксированных размеров длины и ширины на content-box и border-box.</h3>
+    </div>
+
+    <a class="hidden25" href="#hidden25" onclick="view('hidden25'); return false">позиционирование</a>
+    <div id="hidden25" class="hidden25_div" style="display: none; padding-top: 20px;">
+      <h3 class="hidden25_div_h3">Содержащий блок, в котором находится корневой элемент, представляет собой прямоугольник — так называемый начальный содержащий блок. В случае позиционирования содержащий блок полностью зависит от типа позиционирования.</h3>
     </div>
 
 
