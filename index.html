@@ -2,8 +2,10 @@
 <html lang="ru" dir="ltr">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CSS Grid</title>
   <link rel="stylesheet" href="styles/master.css">
+  <link rel="stylesheet" href="styles/prism.css">
 </head>
 <body>
 
@@ -22,21 +24,55 @@
     <a class="hidden2" href="#hidden1" onclick="view('hidden1'); return false">styles</a>
     <div id="hidden1" class="hidden2_div" style="display: none; padding-top: 20px;">
       <h3 class="hidden2_div_h3">Внутренние стили встраиваются в раздел <//head><//head> HTML-документа и определяются внутри тега<//style><//style>. Внутренние стили имеют приоритет над внешними, но уступают встроенным стилям (заданным через атрибут style).</h3>
+      <div class="hidden2_div_h3_div"><pre><code class="language-js"><xmp>
+<style>
+  h2 {
+    color: red;
+  }
+</style>
+</xmp>
+</code>
+</pre>
+      </div>
     </div>
 
     <a class="hidden3" href="#hidden2" onclick="view('hidden2'); return false">import</a>
     <div id="hidden2" class="hidden3_div" style="display: none; padding-top: 20px;">
       <h3 class="hidden3_div_h3">Правило @import позволяет загружать внешние таблицы стилей. Чтобы директива @import работала, она должна располагаться в таблице стилей (внешней или внутренней) перед всеми остальными правилами:</h3>
+      <div class="hidden3_div_h3_div"><pre><code class="language-js"><xmp>
+@import url(mobile.css);
+  p {
+    font-size: 0.9em;
+    color: grey;
+  }
+      </xmp>
+    </code>
+  </pre>
+</div>
     </div>
 
     <a class="hidden4" href="#hidden4" onclick="view('hidden4'); return false">class</a>
     <div id="hidden4" class="hidden4_div" style="display: none; padding-top: 20px;">
       <h3 class="hidden4_div_h3">Селекторы класса позволяют задавать стили для одного и более элементов с одинаковым именем класса, размещенных в разных местах страницы.</h3>
+      <div class="hidden4_div_h3_div"><pre><code class="language-js"><xmp>
+<h1 class="headline">Инструкция
+пользования персональным
+компьютером</h1>
+      </xmp>
+    </code>
+  </pre>
+</div>
     </div>
 
     <a class="hidden5" href="#hidden5" onclick="view('hidden5'); return false">id</a>
     <div id="hidden5" class="hidden5_div" style="display: none; padding-top: 20px;">
       <h3 class="hidden5_div_h3">Селектор идентификатора позволяет форматировать один конкретный элемент. Значение id должно быть уникальным, на одной странице может встречаться только один раз и должно содержать хотя бы один символ. </h3>
+      <div class="hidden5_div_h3_div"><pre><code class="language-js"><xmp>
+<div id="sidebar"></div>
+</xmp>
+</code>
+</pre>
+  </div>
     </div>
 
     <a class="hidden6" href="#hidden6" onclick="view('hidden6'); return false">потомки</a>
@@ -82,6 +118,18 @@
     <a class="hidden14" href="#hidden14" onclick="view('hidden14'); return false">группировка селекторов</a>
     <div id="hidden14" class="hidden14_div" style="display: none; padding-top: 20px;">
       <h3 class="hidden14_div_h3">Один и тот же стиль можно одновременно применить к нескольким элементам. Для этого необходимо в левой части объявления перечислить через запятую нужные селекторы.</h3>
+      <div class="hidden14_div_h3_div"><pre><code class="language-js"><xmp>
+h1,
+h2,
+p,
+span {
+  color: tomato;
+  background: white;
+}
+      </xmp>
+    </code>
+  </pre>
+</div>
     </div>
 
     <a class="hidden15" href="#hidden15" onclick="view('hidden15'); return false">наследование</a>
@@ -117,38 +165,86 @@
     <a class="hidden20" href="#hidden20" onclick="view('hidden20'); return false">width</a>
     <div id="hidden20" class="hidden20_div" style="display: none; padding-top: 20px;">
       <h3 class="hidden20_div_h3">Свойство width определяет ширину содержимого блока.</h3>
+      <div class="hidden20_div_h3_div"><pre><code class="language-js"><xmp>
+span {
+  height: 100px;
+}
+      </xmp>
+    </code>
+  </pre>
+</div>
     </div>
 
     <a class="hidden21" href="#hidden21" onclick="view('hidden21'); return false">height</a>
     <div id="hidden21" class="hidden21_div" style="display: none; padding-top: 20px;">
       <h3 class="hidden21_div_h3">Свойство height определяет высоту содержимого блока. Это свойство не применяется к незамещаемым строчным элементам. Значения длины не могут быть отрицательными.</h3>
+      <div class="hidden21_div_h3_div"><pre><code class="language-js"><xmp>
+span {
+  width: 100px;
+}
+      </xmp>
+    </code>
+  </pre>
+</div>
     </div>
 
     <a class="hidden22" href="#hidden22" onclick="view('hidden22'); return false">min-width, max-width</a>
     <div id="hidden22" class="hidden22_div" style="display: none; padding-top: 20px;">
       <h3 class="hidden22_div_h3">Свойства min-width и max-width позволяют ограничивать ширину содержимого до определенного диапазона. Значения не могут быть отрицательными. Для min-width значение по умолчанию 0, для max-width — none.</h3>
+      <div class="hidden22_div_h3_div"><pre><code class="language-js"><xmp>
+span {
+  max-width: 80px;
+}
+      </xmp>
+    </code>
+  </pre>
+</div>
     </div>
 
     <a class="hidden23" href="#hidden23" onclick="view('hidden23'); return false">min-height, max-height</a>
     <div id="hidden23" class="hidden23_div" style="display: none; padding-top: 20px;">
       <h3 class="hidden23_div_h3">Иногда полезно ограничить высоту элементов определенным диапазоном. Свойства min-height и max-height предлагают эту функциональность.</h3>
+      <div class="hidden23_div_h3_div"><pre><code class="language-js"><xmp>
+span {
+  min-height: 80px;
+}
+      </xmp>
+    </code>
+  </pre>
+</div>
     </div>
 
     <a class="hidden24" href="#hidden24" onclick="view('hidden24'); return false">box-sizing</a>
     <div id="hidden24" class="hidden24_div" style="display: none; padding-top: 20px;">
       <h3 class="hidden24_div_h3">Свойство box-sizing переключает блочную модель с фиксированных размеров длины и ширины на content-box и border-box.</h3>
+      <div class="hidden24_div_h3_div"><pre><code class="language-js"><xmp>
+box-sizing: border-box;
+      </xmp>
+    </code>
+  </pre>
+</div>
     </div>
 
     <a class="hidden25" href="#hidden25" onclick="view('hidden25'); return false">позиционирование</a>
     <div id="hidden25" class="hidden25_div" style="display: none; padding-top: 20px;">
       <h3 class="hidden25_div_h3">Содержащий блок, в котором находится корневой элемент, представляет собой прямоугольник — так называемый начальный содержащий блок. В случае позиционирования содержащий блок полностью зависит от типа позиционирования.</h3>
+      <div class="hidden25_div_h3_div"><pre><code class="language-js"><xmp>
+span {
+  position: absolute;
+  top: 20px;
+  left: 0px;
+}
+      </xmp>
+    </code>
+  </pre>
+</div>
     </div>
 
 
   </section>
 
 
-
+<script src="js/prism.js"></script>
 <script src="js/anime.js" charset="utf-8"></script>
 </body>
 </html>

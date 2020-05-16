@@ -67,42 +67,43 @@ a:hover {
 
 .hidden2,
 .hidden2_div,
-.hidden2_div_h3 {
+.hidden2_div_h3,
+.hidden2_div_h3_div {
   grid-column: 1/2;
   grid-row: 1/2;
-  height: 100%;
 }
 
 h3{
   padding-top: 20px;
-  padding-bottom: 20px;
+  /* padding-bottom: 20px; */
 }
 
 .hidden3,
 .hidden3_div,
-.hidden3_div_h3 {
+.hidden3_div_h3,
+.hidden3_div_h3_div {
   grid-column: 2/3;
   grid-row: 1/2;
 
-  height: 100%;
+  /* height: 100%; */
 }
 
 .hidden4,
 .hidden4_div,
-.hidden4_div_h3 {
+.hidden4_div_h3,
+.hidden4_div_h3_div {
   grid-column: 4/5;
   grid-row: 1/2;
 
-  height: 100%;
+  /* height: 100%; */
 }
 
 .hidden5,
 .hidden5_div,
-.hidden5_div_h3 {
+.hidden5_div_h3,
+.hidden5_div_h3_div {
   grid-column: 3/4;
   grid-row: 1/2;
-
-  height: 100%;
 }
 
 .hidden6,
@@ -179,11 +180,11 @@ h3{
 
 .hidden14,
 .hidden14_div,
-.hidden14_div_h3 {
+.hidden14_div_h3,
+.hidden14_div_h3_div {
   grid-column: 3/4;
   grid-row: 3/4;
 
-  height: 100%;
 }
 
 .hidden15,
@@ -242,60 +243,110 @@ h3{
 
 .hidden20,
 .hidden20_div,
-.hidden20_div_h3 {
+.hidden20_div_h3,
+.hidden20_div_h3_div {
   grid-column: 5/6;
   grid-row: 4/5;
-
-  height: 100%;
 }
 
 .hidden21,
 .hidden21_div,
-.hidden21_div_h3 {
+.hidden21_div_h3,
+.hidden21_div_h3_div {
   grid-column: 1/2;
   grid-row: 5/6;
-
-  height: 100%;
 }
 
 .hidden22,
 .hidden22_div,
-.hidden22_div_h3 {
+.hidden22_div_h3,
+.hidden22_div_h3_div {
   grid-column: 2/3;
   grid-row: 5/6;
-
-  height: 100%;
 }
 
 .hidden23,
 .hidden23_div,
-.hidden23_div_h3 {
+.hidden23_div_h3,
+.hidden23_div_h3_div {
   grid-column: 3/4;
   grid-row: 5/6;
-
-  height: 100%;
 }
 
 .hidden24,
 .hidden24_div,
+.hidden24_div_h3,
 .hidden24_div_h3 {
   grid-column: 4/5;
   grid-row: 5/6;
-
-  height: 100%;
 }
 
 .hidden25,
 .hidden25_div,
-.hidden25_div_h3 {
+.hidden25_div_h3,
+.hidden25_div_h3_div {
   grid-column: 5/6;
   grid-row: 5/6;
-
-  height: 100%;
 }
 
 
+@media (max-width: 768px) {
+  #section_one {
+    width: 100vw;
+    height: 50vh;
+  }
 
+  #section_one div {
+    bottom: auto;
+    right: 0;
+    top: 0;
+  }
+
+
+  #section_two {
+    top: 70vh;
+    width: 100vw;
+    height: 50vh;
+  }
+
+
+  a{
+   margin: 10px 10px;
+}
+
+}
+
+@media (max-width: 415px) {
+  h1 {
+    font-size: 15vw;
+  }
+
+  h6 {
+    font-size: 8vw;
+  }
+
+
+  #section_one div {
+    width: 60vw;
+
+    bottom: auto;
+    right: auto;
+    top: auto;
+    position: static;
+
+    justify-content: space-between;
+  }
+
+  #section_one div a:first-child {
+    margin-left: 10px;
+    padding-left: 0;
+  }
+
+  #section_one div a{
+    padding: 0;
+    font-size: 12px;
+  }
+}
 
 
 
