@@ -316,7 +316,7 @@ h3{
 
 }
 
-@media (max-width: 415px) {
+@media (max-width: 485px) {
   h1 {
     font-size: 15vw;
   }
